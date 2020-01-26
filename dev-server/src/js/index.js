@@ -1,3 +1,14 @@
 import '../css/index.css';
+import text from './text';
 
-document.body.innerHTML = "<p>Hola, estas en el HOME de la clase 10 de webpack</p>";
+text();
+
+if(module.hot){
+    module.hot.accept('./text.js', () => {
+        console.log('Recargado en Caliente');
+        text();
+    });
+}
+
+
+
