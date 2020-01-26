@@ -1,5 +1,5 @@
 const path = require('path')
-const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
+//const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
@@ -25,6 +25,11 @@ module.exports = {
                     'style-loader',
                     'css-loader'
                 ]
+            },
+            {
+                test: /\.js$/,
+                use: 'babel-loader',
+                exclude: /node_modules/
             }
         ]
     },
