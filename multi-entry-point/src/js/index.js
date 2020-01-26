@@ -1,0 +1,1 @@
+console.log("Hola, estas en el HOME de la clase 7 de webpack");
