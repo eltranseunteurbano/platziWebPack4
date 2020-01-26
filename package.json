@@ -7,14 +7,18 @@
     "build": "webpack --entry ./index.js --output ./bundle.js --mode development",
     "build:local": "webpack --mode production",
     "build:external": "webpack --config ./external/webpack.config.js",
-    "build:multi": "webpack --config ./multi-entry-point/webpack.config.js"
-
+    "build:multi": "webpack --config ./multi-entry-point/webpack.config.js",
+    "build:loader": "webpack --config ./css-style-loader/webpack.config.js"
   },
   "author": "Jaime Burbano",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    
+  },
   "devDependencies": {
+    "css-loader": "^3.4.2",
     "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "style-loader": "^1.1.3"
   }
 }
